@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+   max-width: 100wh;
+    height: 100vh;
+    background-color: rgb(44, 35, 5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+   position: absolute;
+    background-color:rgb(64, 70, 58);
+    color: #fff;
+   width:600px;
+    height: 300px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 35px red;
+    padding: 38px;
+    border:3px  dotted rgb(190, 242, 1);
+}
+@media(max-width:700px){
+   .container{
+    width: 400px;
+   }
+
+}
+@media(max-width:400px){
+    .container{
+        width: 300px;
+    }
+   
+}
+h1{
+    margin-top: -5rem;
+    position: absolute;
+    margin-right: 4rem;
+    margin-left: -5rem;
+    color: rgb(230, 230, 4);
+    background-color: rgba(160, 33, 33, 0.236);
+    
+}
+@media(max-width:700px){
+    h1{
+        font-size: 20px;
+        margin-right: 2rem;
+        margin-left: -1rem;
+        
+    }
+}
+#text{
+    color: rgb(209, 221, 221);
+    position: absolute;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    padding-right: 4rem;
+    left: 80px;
+
+    font-size: 20px;
+    text-align: center;
+}
+@media(max-width:700px){
+    #text{
+        top: 50px;
+        left: 25px;
+        padding-right: 2rem;
+
+
+    }
+}
+@media(max-width:400px){
+    #text{
+        margin-top: -2rem;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+#temp ,#temp_dropdown{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    border: 2px dotted rgba(255, 0, 0, 0.426);
+}
+@media(max-width:700px){
+    #temp ,#temp_dropdown{
+        margin-top: 3rem;
+    }
+}
+#temp{
+    margin-bottom: 5px;
+
+}
+#temp_dropdown{
+    width: 100px;
+}
+#submit-btn{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    
+}
+#submit-btn:hover{
+    box-shadow: 3px 4px 18px black;
+    transition: all;
+    transition-duration: 200ms;
+    border: 2px dotted red;
+}
+#resultContainer{
+    color: rgb(240, 244, 9);
+    font-size: large;
+
+
+}
+@media(max-width:400px){
+    #resultContainer{
+        padding-left: 1rem;
+    }
+}
